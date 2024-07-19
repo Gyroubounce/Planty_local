@@ -22,3 +22,27 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+//modification du lien admin dans le header//
+
+function modify_nav_menu_items ($items, $args) {
+//vérification du header
+
+    if ($args ->theme_location == 'Header') {
+// vérification si l'utilisateur est connecté http://localhost/planty_local/admin/
+
+        if(is_user_logged_in ()) {
+
+    $items .='<li><a href="' . adminn_url() . '">Admin</a></li>';
+
+    } else {
+
+    $items =str_replace('<li><a href="' . adminn_url() . '">Admin</a></li>','',$items);
+    }
+}
+return $items;
+
+}
+
+add_filter('wp_nav_menu_items', 'modify_nav_menu_items',10,2);
+

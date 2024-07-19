@@ -11,3 +11,134 @@ Updated: 2024-07-10 11:30:46
 
 */
 
+/* layout pour contact form7 formulaire de commande */
+
+#wpcf7-f900-p35-ol
+.wpcf7-form.init 
+
+.container 
+{
+border-top: solid 1px white;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.container-img {
+display: flex;
+flex-direction: wrap;
+justify-content: space-between;
+color: white;
+padding-bottom: 20px;
+gap: 20px;
+}
+
+.img 
+{
+width: 100%;
+padding-top: 20px;
+position: relative;
+}
+
+.fraise
+{
+position: absolute;
+top: 20%;
+left: 16%;
+transform: translate (-50%, -50%);
+font-size: 28px;
+font-weight: 800;
+}
+
+.citron
+{
+position: absolute;
+top: 20%;
+left: 16%;
+transform: translate (-50%, -50%);
+font-size: 28px;
+font-weight: 800;
+}
+
+.pamplemousse1
+{
+position: absolute;
+top: 15%;
+left: 14%;
+transform: translate (-50%, -50%);
+font-size: 28px;
+font-weight: 800;
+}
+
+.pamplemousse2
+{
+position: absolute;
+top: 25%;
+left: 13%;
+transform: translate (-50%, -50%);
+font-size: 28px;
+font-weight: 800;
+}
+
+.framboise1
+{
+position: absolute;
+top: 15%;
+left: 14%;
+transform: translate (-50%, -50%);
+font-size: 28px;
+font-weight: 800;
+}
+
+.framboise2
+{
+position: absolute;
+top: 25%;
+left: 14%;
+transform: translate (-50%, -50%);
+font-size: 28px;
+font-weight: 800;
+}
+
+.container-number 
+{
+padding-top: 20px;
+padding-left: 40%;
+padding-bottom: 20px;
+}
+
+
+.container-form 
+{
+display: flex;
+flex-direction: wrap;
+gap: 50px;
+border-top: solid 1px white;
+padding-top: 50px;
+padding-bottom: 50px;
+border-sizing: border-box;
+}
+
+.container-form1 
+{
+border-right: solid 1px white;
+padding-right: 50px;
+
+}
+
+.require
+{
+width: 500px;
+padding-bottom: 10px;
+}
+
+h2 .title
+{
+padding-bottom: 20px;
+}
+
+.text
+{
+padding-top: 15px;
+padding-bottom: 5px;
+}
+
