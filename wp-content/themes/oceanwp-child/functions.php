@@ -23,26 +23,29 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
+
+
 //modification du lien admin dans le header//
 
-function modify_nav_menu_items ($items, $args) {
-//vérification du header
+function modify_nav_menu_items($items, $args) {
+    // Vérifiez si le menu ciblé est 'primary' ou autre emplacement correct
+    if ($args->menu == 'header') {
 
-    if ($args ->theme_location == 'Header') {
-// vérification si l'utilisateur est connecté http://localhost/planty_local/admin/
+        $admin_url = 'http://localhost/planty_local/wp-admin';
+        // Créez l'élément à rechercher
+        $admin_item = '<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1483"><a href="' . $admin_url . '" class="wpr-menu-item wpr-pointer-item">Admin</a></li>';
 
-        if(is_user_logged_in ()) {
-
-    $items .='<li><a href="' . adminn_url() . '">Admin</a></li>';
-
-    } else {
-
-    $items =str_replace('<li><a href="' . adminn_url() . '">Admin</a></li>','',$items);
+        // Si l'utilisateur est connecté
+        if (is_user_logged_in()) {
+            // Aucun changement n'est nécessaire, le lien Admin reste visible
+        } else {
+            // Si l'utilisateur n'est pas connecté, assurez-vous que le lien Admin n'est pas présent
+            $items = str_replace($admin_item, '', $items);
+        }
     }
-}
-return $items;
 
+    return $items;
 }
 
-add_filter('wp_nav_menu_items', 'modify_nav_menu_items',10,2);
+add_filter('wp_nav_menu_items', 'modify_nav_menu_items', 10, 2);
 

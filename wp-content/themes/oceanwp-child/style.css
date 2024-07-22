@@ -13,132 +13,486 @@ Updated: 2024-07-10 11:30:46
 
 /* layout pour contact form7 formulaire de commande */
 
-#wpcf7-f900-p35-ol
-.wpcf7-form.init 
 
-.container 
-{
-border-top: solid 1px white;
-padding-top: 50px;
-padding-bottom: 50px;
+#wpcf7-f980-p35-o1 .container 
+    {
+    border-top: solid 1px white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+#wpcf7-f980-p35-o1 .container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 20px;
+    gap: 20px;
 }
 
-.container-img {
-display: flex;
-flex-direction: wrap;
-justify-content: space-between;
-color: white;
-padding-bottom: 20px;
-gap: 20px;
+#wpcf7-f980-p35-o1 .img 
+    {
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    }
+
+#wpcf7-f980-p35-o1 .fraise
+    {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translate (-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
 }
 
-.img 
-{
-width: 100%;
-padding-top: 20px;
-position: relative;
+#wpcf7-f980-p35-o1 .citron
+    {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translate (-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
+    }
+
+#wpcf7-f980-p35-o1 .pamplemousse1
+    {
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    transform: translate (-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
+    }
+
+#wpcf7-f980-p35-o1 .pamplemousse2
+    {
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    transform: translate (-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
 }
 
-.fraise
-{
-position: absolute;
-top: 20%;
-left: 16%;
-transform: translate (-50%, -50%);
-font-size: 28px;
-font-weight: 800;
+#wpcf7-f980-p35-o1 .framboise1
+    {
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    transform: translate (-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
 }
 
-.citron
-{
-position: absolute;
-top: 20%;
-left: 16%;
-transform: translate (-50%, -50%);
-font-size: 28px;
-font-weight: 800;
+#wpcf7-f980-p35-o1 .framboise2
+    {
+    position: absolute;
+    top: 25%;
+    left: 14%;
+    transform: translate (-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
 }
 
-.pamplemousse1
-{
-position: absolute;
-top: 15%;
-left: 14%;
-transform: translate (-50%, -50%);
-font-size: 28px;
-font-weight: 800;
+#wpcf7-f980-p35-o1 .container-number 
+    {
+    padding-top: 20px;
+    padding-left: 40%;
+    padding-bottom: 20px;
+    }
+
+
+#wpcf7-f980-p35-o1 .container-form 
+    {
+    display: flex;
+    flex-direction: wrap;
+    gap: 50px;
+    border-top: solid 1px white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-sizing: border-box;
+    }
+
+#wpcf7-f980-p35-o1 .container-form1 
+    {
+    border-right: solid 1px white;
+    padding-right: 50px;
+    }
+
+#wpcf7-f980-p35-o1 .require
+    {
+    width: 500px;
+    padding-bottom: 10px;
+    }
+
+#wpcf7-f980-p35-o1 h2 .title
+    {
+    padding-bottom: 20px;
+    }
+
+#wpcf7-f980-p35-o1 .text
+    {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    }
+
+.menu-item-1481 a {
+    font-weight: bold!important;
+    color: white!important;
+    padding-left: 80px!important;
+    padding-right: 80px!important;
+    background-color: #DC9F96;
 }
 
-.pamplemousse2
-{
-position: absolute;
-top: 25%;
-left: 13%;
-transform: translate (-50%, -50%);
-font-size: 28px;
-font-weight: 800;
-}
-
-.framboise1
-{
-position: absolute;
-top: 15%;
-left: 14%;
-transform: translate (-50%, -50%);
-font-size: 28px;
-font-weight: 800;
-}
-
-.framboise2
-{
-position: absolute;
-top: 25%;
-left: 14%;
-transform: translate (-50%, -50%);
-font-size: 28px;
-font-weight: 800;
-}
-
-.container-number 
-{
-padding-top: 20px;
-padding-left: 40%;
-padding-bottom: 20px;
+.menu-item-1481 a:hover {
+    background-color: #C02E44;
 }
 
 
-.container-form 
-{
-display: flex;
-flex-direction: wrap;
-gap: 50px;
-border-top: solid 1px white;
-padding-top: 50px;
-padding-bottom: 50px;
-border-sizing: border-box;
+@media (min-width: 320px) and (max-width: 768px) {
+    .menu-item-1481 a {
+        font-weight: bold!important;
+        color: rgb(255, 255, 255)!important;
+        background-color: #DC9F96!important;
+    }
+    
+    .menu-item-1481 a:hover {
+        background-color: #C02E44!important;
+    }
+
+   
+    #wpcf7-f980-p35-o1 .container  {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #wpcf7-f980-p35-o1 .container-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+    }
+
+    #wpcf7-f980-p35-o1 .img  {
+        width: 100%;
+        position: relative;
+        padding-top: 10px;
+    }
+
+    #wpcf7-f980-p35-o1 .fraise {
+        position: absolute;
+        top:30%;
+        left: 20%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .citron {
+        position: absolute;
+        top: 30%;
+        left: 19%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .pamplemousse1 {
+        position: absolute;
+        top: 25%;
+        left: 16%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .pamplemousse2 {
+        position: absolute;
+        top: 35%;
+        left: 14%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .framboise1 {
+        position: absolute;
+        top: 25%;
+        left: 26%;
+        transform: translate (-50%, -50%);
+        }
+
+    #wpcf7-f980-p35-o1 .framboise2 {
+        position: absolute;
+        top: 35%;
+        left: 26%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .container-number {
+        padding-top: 20px;
+        padding-left: 42%;
+        padding-bottom: 10px;
+    }
+
+
+    #wpcf7-f980-p35-o1 .container-form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-sizing: border-box;
+    }
+
+
+    #wpcf7-f980-p35-o1 .container-form1 {
+        border: none;
+    }
+
+
+    #wpcf7-f980-p35-o1 .require
+    {
+        width: 300px!important;
+        padding-bottom: 10px;
+    }
+
+    #wpcf7-f980-p35-o1 .title
+    {
+        font-size: 28px!important;
+        padding-top: 10px;
+    }
+
+    #wpcf7-f980-p35-o1 .text
+    {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-size: 20px!important;
+    }
 }
 
-.container-form1 
-{
-border-right: solid 1px white;
-padding-right: 50px;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-item-1481 a {
+        font-weight: bold!important;
+        color: rgb(255, 255, 255)!important;
+        background-color: #DC9F96!important;
+    }
+    
+    .menu-item-1481 a:hover {
+        background-color: #C02E44!important;
+    }
 
+   
+    #wpcf7-f980-p35-o1 .container  {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #wpcf7-f980-p35-o1 .container-img {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        color: white;
+    }
+
+    #wpcf7-f980-p35-o1 .img  {
+        width: 100%;
+        position: relative;
+        padding-top: 10px;
+    }
+
+    #wpcf7-f980-p35-o1 .fraise {
+        position: absolute;
+        top:25%;
+        left: 16%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .citron {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .pamplemousse1 {
+        position: absolute;
+        top: 20%;
+        left: 13%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .pamplemousse2 {
+        position: absolute;
+        top: 30%;
+        left: 12%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .framboise1 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transform: translate (-50%, -50%);
+        }
+
+    #wpcf7-f980-p35-o1 .framboise2 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .container-number {
+        padding-top: 20px;
+        padding-left: 42%;
+        padding-bottom: 10px;
+        width:20px!important;
+        border:none!important;
+        border-radius:none!important;
+        size: 20px;
+    }
+
+
+    #wpcf7-f980-p35-o1 .container-form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-sizing: border-box;
+    }
+
+
+    #wpcf7-f980-p35-o1 .container-form1 {
+        border: none;
+    }
+
+
+    #wpcf7-f980-p35-o1 .require
+    {
+        width: 400px!important;
+        padding-bottom: 10px;
+    }
+
+    #wpcf7-f980-p35-o1 .title
+    {
+        font-size: 34px!important;
+    }
+
+    #wpcf7-f980-p35-o1 .text
+    {
+        padding-bottom: 5px;
+        font-size: 24px!important;
+    }
 }
 
-.require
-{
-width: 500px;
-padding-bottom: 10px;
-}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .menu-item-1481 a {
+        font-weight: bold!important;
+        color: rgb(255, 255, 255)!important;
+        background-color: #DC9F96!important;
+    }
+    
+    .menu-item-1481 a:hover {
+        background-color: #C02E44!important;
+    }
 
-h2 .title
-{
-padding-bottom: 20px;
-}
+   
+    #wpcf7-f980-p35-o1 .container  {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
-.text
-{
-padding-top: 15px;
-padding-bottom: 5px;
+    #wpcf7-f980-p35-o1 .container-img {
+        display: grid;
+        grid-template-columns: 280px 280px;
+        color: white;
+    }
+
+    #wpcf7-f980-p35-o1 .img  {
+        width: 100%;
+        position: relative;
+        padding-top: 10px;
+    }
+
+    #wpcf7-f980-p35-o1 .fraise {
+        position: absolute;
+        top:25%;
+        left: 16%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .citron {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .pamplemousse1 {
+        position: absolute;
+        top: 20%;
+        left: 13%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .pamplemousse2 {
+        position: absolute;
+        top: 30%;
+        left: 12%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .framboise1 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transform: translate (-50%, -50%);
+        }
+
+    #wpcf7-f980-p35-o1 .framboise2 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translate (-50%, -50%);
+    }
+
+    #wpcf7-f980-p35-o1 .container-number {
+        padding-top: 20px;
+        padding-left: 42%;
+        padding-bottom: 10px;
+        width:20px!important;
+        border:none!important;
+        border-radius:none!important;
+        size: 20px;
+    }
+
+
+    #wpcf7-f980-p35-o1 .container-form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-sizing: border-box;
+    }
+
+
+    #wpcf7-f980-p35-o1 .container-form1 {
+        border: none;
+    }
+
+
+    #wpcf7-f980-p35-o1 .require
+    {
+        width: 600px!important;
+        padding-bottom: 10px;
+    }
+
+    #wpcf7-f980-p35-o1 .title
+    {
+        font-size: 34px!important;
+    }
+
+    #wpcf7-f980-p35-o1 .text
+    {
+        padding-bottom: 5px;
+        font-size: 24px!important;
+    }
 }
 
