@@ -11,9 +11,25 @@ Updated: 2024-07-10 11:30:46
 
 */
 
+/* Lien Nav Commander */
+
+.menu-item-1481 a {
+    font-weight: bold!important;
+    color: white!important;
+    padding-left: 80px!important;
+    padding-right: 80px!important;
+    background-color: #DC9F96;
+}
+
+.menu-item-1481 a:hover {
+    background-color: #C02E44;
+}
+
+
+
 /* layout pour contact form7 formulaire de commande */
 
-
+/* Contenu Globale*/
 #wpcf7-f980-p35-o1 .container 
     {
     border-top: solid 1px white;
@@ -21,6 +37,7 @@ Updated: 2024-07-10 11:30:46
     padding-bottom: 50px;
     }
 
+/* Contenu des images */
 #wpcf7-f980-p35-o1 .container-img {
     display: flex;
     flex-direction: row;
@@ -41,8 +58,8 @@ Updated: 2024-07-10 11:30:46
     {
     position: absolute;
     top: 20%;
-    left: 16%;
-    transform: translate (-50%, -50%);
+    left: 0%;
+    transform: translate(20%, 20%);
     font-size: 28px;
     font-weight: 800;
 }
@@ -51,8 +68,8 @@ Updated: 2024-07-10 11:30:46
     {
     position: absolute;
     top: 20%;
-    left: 16%;
-    transform: translate (-50%, -50%);
+    left: 0%;
+    transform: translate(15%, 20%);
     font-size: 28px;
     font-weight: 800;
     }
@@ -61,8 +78,8 @@ Updated: 2024-07-10 11:30:46
     {
     position: absolute;
     top: 15%;
-    left: 14%;
-    transform: translate (-50%, -50%);
+    left: 0%;
+    transform: translate(10%, 20%);
     font-size: 28px;
     font-weight: 800;
     }
@@ -71,8 +88,8 @@ Updated: 2024-07-10 11:30:46
     {
     position: absolute;
     top: 25%;
-    left: 13%;
-    transform: translate (-50%, -50%);
+    left: 0%;
+    transform: translate(6%, 20%);
     font-size: 28px;
     font-weight: 800;
 }
@@ -81,8 +98,8 @@ Updated: 2024-07-10 11:30:46
     {
     position: absolute;
     top: 15%;
-    left: 14%;
-    transform: translate (-50%, -50%);
+    left: 6%;
+    transform: translate(20%, 20%);
     font-size: 28px;
     font-weight: 800;
 }
@@ -91,29 +108,102 @@ Updated: 2024-07-10 11:30:46
     {
     position: absolute;
     top: 25%;
-    left: 14%;
-    transform: translate (-50%, -50%);
+    left: 6%;
+    transform: translate(20%, 20%);
     font-size: 28px;
     font-weight: 800;
 }
 
-#wpcf7-f980-p35-o1 .container-number 
+/* Contenu Number */
+#wpcf7-f980-p35-o1 .ok
     {
-    padding-top: 20px;
-    padding-left: 40%;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
     }
 
+#wpcf7-f980-p35-o1 .container-number 
+    {
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
 
+#wpcf7-f980-p35-o1 .ok-button 
+    {
+     margin-top: 20px;
+     width: 130px;
+     height: 75px;
+     border-radius: 10px;
+     border: none;
+     background-color: #DC9F96;
+   }
+
+#wpcf7-f980-p35-o1 .ok-button:hover {
+    background-color:#C02E44
+} 
+
+
+/* Masquer les flèches par défaut */
+#wpcf7-f980-p35-o1 input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#wpcf7-f980-p35-o1  input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* block Quantité*/
+#wpcf7-f980-p35-o1  .number-input-block {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Masquer le débordement */
+    width: 90px;
+    height: 75px;
+}
+
+/*block champ de saisie du nombre */
+#wpcf7-f980-p35-o1 .number-input-block input[type="number"] {
+    text-align: center;
+    border: none; /* Pas de bordure */
+    outline: none; /* Pas de contour */
+    width: 50px; /* Largeur du champ de saisie */
+    padding-right: 5px; /* Espacement interne */
+    font-size: 22px; /* Taille de la police */
+}
+/* block pour les boutons + et -*/
+#wpcf7-f980-p35-o1 .number-input-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+#wpcf7-f980-p35-o1 .number-increment, .number-decrement {
+    background-color:#DC9F96; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+    color: rgb(255, 255, 255); /* Couleur du texte */
+    cursor: pointer; /* Curseur pointeur */
+    font-size: 22px; /* Taille de la police */
+    width: 40px; /* Largeur des boutons */
+    margin-left: 5px;
+}
+
+#wpcf7-f980-p35-o1 .number-increment:hover, .number-decrement:hover {
+    background-color:#C02E44; /* Couleur de fond au survol */
+}
+
+/* Adresse et livraison */
 #wpcf7-f980-p35-o1 .container-form 
     {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: row;
     gap: 50px;
     border-top: solid 1px white;
     padding-top: 50px;
     padding-bottom: 50px;
-    border-sizing: border-box;
     }
 
 #wpcf7-f980-p35-o1 .container-form1 
@@ -124,7 +214,7 @@ Updated: 2024-07-10 11:30:46
 
 #wpcf7-f980-p35-o1 .require
     {
-    width: 500px;
+    width: 450px;
     padding-bottom: 10px;
     }
 
@@ -139,20 +229,10 @@ Updated: 2024-07-10 11:30:46
     padding-bottom: 5px;
     }
 
-.menu-item-1481 a {
-    font-weight: bold!important;
-    color: white!important;
-    padding-left: 80px!important;
-    padding-right: 80px!important;
-    background-color: #DC9F96;
-}
-
-.menu-item-1481 a:hover {
-    background-color: #C02E44;
-}
 
 
 @media (min-width: 320px) and (max-width: 768px) {
+    /* Bouton nav Commander*/
     .menu-item-1481 a {
         font-weight: bold!important;
         color: rgb(255, 255, 255)!important;
@@ -163,7 +243,7 @@ Updated: 2024-07-10 11:30:46
         background-color: #C02E44!important;
     }
 
-   
+   /* block formulaire Votre commande*/
     #wpcf7-f980-p35-o1 .container  {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -183,61 +263,60 @@ Updated: 2024-07-10 11:30:46
     }
 
     #wpcf7-f980-p35-o1 .fraise {
-        position: absolute;
-        top:30%;
-        left: 20%;
-        transform: translate (-50%, -50%);
+        top: 25%;
+        left: 5%;
+        transform: translate(20%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .citron {
-        position: absolute;
-        top: 30%;
-        left: 19%;
-        transform: translate (-50%, -50%);
+        top: 25%;
+        left: 3%;
+        transform: translate(20%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .pamplemousse1 {
-        position: absolute;
-        top: 25%;
-        left: 16%;
-        transform: translate (-50%, -50%);
+        top: 20%;
+        left: 0%;
+        transform: translate(20%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .pamplemousse2 {
-        position: absolute;
-        top: 35%;
-        left: 14%;
-        transform: translate (-50%, -50%);
+        top: 30%;
+        left: 1%;
+        transform: translate(15%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .framboise1 {
-        position: absolute;
-        top: 25%;
-        left: 26%;
-        transform: translate (-50%, -50%);
+        top: 20%;
+        left: 12%;
+        transform: translate(20%, 20%);
         }
 
     #wpcf7-f980-p35-o1 .framboise2 {
-        position: absolute;
-        top: 35%;
-        left: 26%;
-        transform: translate (-50%, -50%);
+        top: 30%;
+        left: 12%;
+        transform: translate(20%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .container-number {
         padding-top: 20px;
-        padding-left: 42%;
         padding-bottom: 10px;
     }
 
+     /* block bouton ok*/
+    #wpcf7-f980-p35-o1 .ok-button 
+    {
+     width: 170px;
+     height: 75px;
+    }
 
+     /* block formulaire adresse*/
     #wpcf7-f980-p35-o1 .container-form {
         display: flex;
         flex-direction: column;
         gap: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
-        border-sizing: border-box;
     }
 
 
@@ -267,17 +346,8 @@ Updated: 2024-07-10 11:30:46
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .menu-item-1481 a {
-        font-weight: bold!important;
-        color: rgb(255, 255, 255)!important;
-        background-color: #DC9F96!important;
-    }
-    
-    .menu-item-1481 a:hover {
-        background-color: #C02E44!important;
-    }
-
-   
+  
+ /* block formulaire Votre commande*/   
     #wpcf7-f980-p35-o1 .container  {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -296,65 +366,61 @@ Updated: 2024-07-10 11:30:46
     }
 
     #wpcf7-f980-p35-o1 .fraise {
-        position: absolute;
-        top:25%;
-        left: 16%;
-        transform: translate (-50%, -50%);
+        top: 20%;
+        left: 3%;
+        transform: translate(20%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .citron {
-        position: absolute;
-        top: 25%;
-        left: 15%;
-        transform: translate (-50%, -50%);
+        top: 20%;
+        left: 0%;
+        transform: translate(17%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .pamplemousse1 {
-        position: absolute;
-        top: 20%;
-        left: 13%;
-        transform: translate (-50%, -50%);
+        top: 15%;
+        left: 0%;
+        transform: translate(15%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .pamplemousse2 {
-        position: absolute;
-        top: 30%;
-        left: 12%;
-        transform: translate (-50%, -50%);
+        top: 25%;
+        left: 0%;
+        transform: translate(12%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .framboise1 {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        transform: translate (-50%, -50%);
+        top: 15%;
+        left: 10%;
+        transform: translate(20%, 20%);
         }
 
     #wpcf7-f980-p35-o1 .framboise2 {
-        position: absolute;
-        top: 30%;
-        left: 20%;
-        transform: translate (-50%, -50%);
+        top: 25%;
+        left: 10%;
+        transform: translate(20%, 20%);
     }
 
     #wpcf7-f980-p35-o1 .container-number {
         padding-top: 20px;
-        padding-left: 42%;
         padding-bottom: 10px;
-        width:20px!important;
-        border:none!important;
-        border-radius:none!important;
-        size: 20px;
+    }
+
+ /* block bouton ok*/
+    #wpcf7-f980-p35-o1 .ok-button 
+    {
+     width: 150px;
+     height: 75px;
     }
 
 
+ /* block formulaire adresse*/
     #wpcf7-f980-p35-o1 .container-form {
         display: flex;
         flex-direction: column;
         gap: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
-        border-sizing: border-box;
     }
 
 
@@ -382,17 +448,8 @@ Updated: 2024-07-10 11:30:46
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .menu-item-1481 a {
-        font-weight: bold!important;
-        color: rgb(255, 255, 255)!important;
-        background-color: #DC9F96!important;
-    }
-    
-    .menu-item-1481 a:hover {
-        background-color: #C02E44!important;
-    }
 
-   
+   /* block formulaire commande*/
     #wpcf7-f980-p35-o1 .container  {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -411,65 +468,62 @@ Updated: 2024-07-10 11:30:46
     }
 
     #wpcf7-f980-p35-o1 .fraise {
-        position: absolute;
-        top:25%;
-        left: 16%;
-        transform: translate (-50%, -50%);
-    }
-
-    #wpcf7-f980-p35-o1 .citron {
-        position: absolute;
-        top: 25%;
-        left: 15%;
-        transform: translate (-50%, -50%);
-    }
-
-    #wpcf7-f980-p35-o1 .pamplemousse1 {
-        position: absolute;
-        top: 20%;
-        left: 13%;
-        transform: translate (-50%, -50%);
-    }
-
-    #wpcf7-f980-p35-o1 .pamplemousse2 {
-        position: absolute;
-        top: 30%;
-        left: 12%;
-        transform: translate (-50%, -50%);
-    }
-
-    #wpcf7-f980-p35-o1 .framboise1 {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        transform: translate (-50%, -50%);
+        top: 23%;
+        left: 7%;
+        transform: translate(20%, 20%);
         }
 
+    #wpcf7-f980-p35-o1 .citron {
+        top: 23%;
+        left: 5%;
+        transform: translate(20%, 20%);
+        }
+
+    #wpcf7-f980-p35-o1 .pamplemousse1 {
+        top: 18%;
+        left: 0%;
+        transform: translate(20%, 20%);
+        }
+
+    #wpcf7-f980-p35-o1 .pamplemousse2 {
+        top: 28%;
+        left: 0%;
+        transform: translate(17%, 20%);
+        }
+
+    #wpcf7-f980-p35-o1 .framboise1 {
+        top: 18%;
+        left: 15%;
+        transform: translate(20%, 20%);
+        }
+    
+
     #wpcf7-f980-p35-o1 .framboise2 {
-        position: absolute;
-        top: 30%;
-        left: 20%;
-        transform: translate (-50%, -50%);
-    }
+        top: 28%;
+        left: 15%;
+        transform: translate(20%, 20%);
+        }
+    
 
     #wpcf7-f980-p35-o1 .container-number {
         padding-top: 20px;
-        padding-left: 42%;
         padding-bottom: 10px;
-        width:20px!important;
-        border:none!important;
-        border-radius:none!important;
-        size: 20px;
     }
 
+     /* block bouton ok*/
+     #wpcf7-f980-p35-o1 .ok-button 
+     {
+      width: 170px;
+      height: 75px;
+     }
 
+/* block formulaire adresse*/
     #wpcf7-f980-p35-o1 .container-form {
         display: flex;
         flex-direction: column;
         gap: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
-        border-sizing: border-box;
     }
 
 
@@ -496,3 +550,110 @@ Updated: 2024-07-10 11:30:46
     }
 }
 
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+/* block formulaire Commande*/
+    #wpcf7-f980-p35-o1 .container 
+    {
+    border-top: solid 1px white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+#wpcf7-f980-p35-o1 .container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+#wpcf7-f980-p35-o1 .img 
+    {
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    }
+
+#wpcf7-f980-p35-o1 .fraise
+{
+    top: 20%;
+    left: 1%;
+    transform: translate(15%, 20%);
+}
+
+#wpcf7-f980-p35-o1 .citron
+{
+    top: 20%;
+    left: 0%;
+    transform: translate(15px, 20%);
+}
+#wpcf7-f980-p35-o1 .pamplemousse1
+{
+    top: 15%;
+    left: 2%;
+    transform: translate(5%, 20%);
+}
+
+#wpcf7-f980-p35-o1 .pamplemousse2
+{
+    top: 25%;
+    left: 0%;
+    transform: translate(4%, 20%);
+}
+
+#wpcf7-f980-p35-o1 .framboise1
+    {
+    top: 15%;
+    left: 6%;
+    transform: translate(20%, 20%);
+}
+
+#wpcf7-f980-p35-o1 .framboise2
+    {
+    top: 25%;
+    left: 6%;
+    transform: translate(20%, 20%);
+}
+
+#wpcf7-f980-p35-o1 .container-number 
+    {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+/* block formulaire adresse*/
+#wpcf7-f980-p35-o1 .container-form 
+    {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border-top: solid 1px white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+#wpcf7-f980-p35-o1 .container-form1 
+    {
+    border-right: solid 1px white;
+    padding-right: 50px;
+    }
+
+#wpcf7-f980-p35-o1 .require
+    {
+    width: 330px;
+    padding-bottom: 10px;
+    }
+
+#wpcf7-f980-p35-o1 h2 .title
+    {
+    padding-bottom: 20px;
+    }
+
+#wpcf7-f980-p35-o1 .text
+    {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    }
+}
